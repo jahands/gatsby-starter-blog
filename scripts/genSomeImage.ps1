@@ -130,7 +130,7 @@ export const pageQuery = graphql``
 
 "@
 
-for ($i = 2; $i -lt 10000; $i++) {
-    $file.Replace("__ID__", $i) | Out-File -Encoding utf8 "$PSScriptRoot/../src/components/images/image-$i.js"
-    $page.Replace("__ID__", $i) | Out-File -Encoding utf8 "$PSScriptRoot/../src/pages/images/image-$i.js"
+for ($i = 2; $i -lt 1002; $i++) {
+  $file.Replace("__ID__", $i) | Out-File -Encoding utf8 "$PSScriptRoot/../src/components/images/image-$i.js"
+  $page.Replace("__ID__", $i) | Out-File -Encoding utf8 "$PSScriptRoot/../src/pages/images/image-$i.js"
 }
